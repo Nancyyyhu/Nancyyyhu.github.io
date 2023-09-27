@@ -1,0 +1,39 @@
+body{
+  background-color: pink;
+}
+
+dialog{
+  background-color: black;
+  color: lightpink;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1{
+  color: black;
+  text-align: center;
+  transform: rotateX(150deg);
+}
+
+h2{
+  color: black;
+}
+
+p1{
+  color: black; 
+  text-align: center;
+}
+
+p2{
+  color: white; 
+  font-size: 450px;
+  text-align: right;
+  letter-spacing: -5px;
+  text-shadow: 4px 4px 4px #000000;
+}
+
+form{;
+  color: black;
+  text-align: justify-all;
+}
+
