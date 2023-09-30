@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'burgess-regular';
+    src: url('fonts/burgess-regular.eot');
+    src: url('fonts/burgess-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/burgess-regular.woff') format('woff'),
+         url('fonts/burgess-regular.woff2') format('woff2'),
+         url('fonts/burgess-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'LoveLight-Regular';
+     src:url('fonts/LoveLight-Regular.woff') format('woff'),
+         url('fonts/LoveLight-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'MATIOTTELEGANTFONT-Regular';
+     src:url('fonts/MATIOTTELEGANTFONT-Regular.woff') format('woff'),
+         url('fonts/MATIOTTELEGANTFONT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'star';
+     src:url('fonts/star.woff') format('woff'),
+         url('fonts/star.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'Moonstar';
+     src:url('fonts/Moonstar.woff') format('woff'),
+         url('fonts/Moonstar.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'RotontoTrial-Regular';
+     src:url('fonts/RotontoTrial-Regular.woff') format('woff'),
+         url('fonts/RotontoTrial-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'Renaissance-Regular';
+     src:url('fonts/Renaissance-Regular.woff') format('woff'),
+         url('fonts/Renaissance-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+     font-family: 'MermaidSwashCaps-Bold';
+     src:url('fonts/MermaidSwashCaps-Bold.woff') format('woff'),
+         url('fonts/MermaidSwashCaps-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --page-1-color:darkblue;
+    --page-2-color:darkblue;
+    --page-3-color:darkblue;
+    --page-4-color:darkblue;
+    ---animate-speed: 1s;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h2{
+  color: #ef629f;
+  text-align: center;
+  transform: rotateX(150deg);
+  font-family: 'MATIOTTELEGANTFONT-Regular';
+  font-size: 30px;
+}
+
+h3{
+  color: #ef629f;
+  font-size: 20px;
+  font-family: 'MATIOTTELEGANTFONT-Regular';
+  letter-spacing: 2px;
+}
+
+dialog{
+  background-color: #ffcebf;
+  color: #ef629f;
+  font-size: 18px;
+  text-align: center;
+}
+
+h4{
+    text-align: center;
+    font-family: 'MATIOTTELEGANTFONT-Regular';
+    letter-spacing: 1px;
+    color: #ffcebf;
+}
+
+
+body{
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: cell;
+}
+
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none; 
+}
+
+/* page color */
+#page-1{background: var(--page-1-color);
+        background-image: linear-gradient(to bottom, #eecda3, #ef629f);
+    margin: 0; 
+    padding: 0;}
+#page-2{background: var(--page-2-color);
+        background-image: linear-gradient(to bottom, #ef629f, #eecda3);
+    margin: 0; 
+    padding: 0;}
+#page-3{background: var(--page-3-color);
+        background-image: linear-gradient(to bottom, #eecda3, #ef629f);
+    margin: 0; 
+    padding: 0;}
+#page-4{background: var(--page-4-color);
+        background-color: darkblue;}
+/*  */
+.page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section h1{
+    font-size: 70px;
+    line-height: 1.5;
+    margin: 8px;
+    color: #ffcebf;
+    font-family: 'MermaidSwashCaps-Bold'
+}
+section p{
+    font-size: 20px;
+    font-family: 'MermaidSwashCaps-Bold';
+    color: #ffcebf;
+}
+
+section .btn{
+    display: inline-block;
+    padding: 15px 15px;
+    border: none;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 15px;
+    background-color: #ffcebf;
+    transition: all 0.5s ease-in;
+}
+section .btn:hover{
+    color: white;
+    background-color: #ef629f;
+}
+
+
+.image-container img {
+    position: relative;
+    left: 10%;
+    transform: translateX(-50%);
+    opacity: 0; 
+    animation: dropImage 4s ease-in-out infinite; 
+}
+
+@keyframes dropImage {
+    0% {
+        top: -100%; 
+        opacity: 0; 
+    }
+    100% {
+        top: 65%; 
+        opacity: 1; 
+    }
+}
+
+.graph-card {
+    width: 500px;
+    height: 500px;
+    perspective: 1000px; 
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s; 
+}
+.graph {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front-graph {
+    transform: rotateY(0deg);
+}
+.back-graph {
+    transform: rotateY(180deg);
+}
+.graph-card:hover {
+    transform: rotateY(180deg); 
+}
+
+
+#page-1 h1{
+    transform: translateY(-1200px);
+    animation: heading var(---animate-speed)
+    forwards ease-in 0.5s;
+}
+#page-1 p{
+    transform: translateX(-1600px);
+    animation: text var(---animate-speed) forwards
+    ease-in 1s;
+}
+#page-3 p{
+    margin:50px;
+    transform: translateX(-1600px);
+    animation: text var(---animate-speed) forwards
+    ease-in 1s;
+}
+@keyframes heading {
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes text {
+    to{
+        transform: translateX(0);
+    }
