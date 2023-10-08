@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'burgess-regular';
+    src: url('fonts/burgess-regular.eot');
+    src: url('fonts/burgess-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/burgess-regular.woff') format('woff'),
+         url('fonts/burgess-regular.woff2') format('woff2'),
+         url('fonts/burgess-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'LoveLight-Regular';
+     src:url('fonts/LoveLight-Regular.woff') format('woff'),
+         url('fonts/LoveLight-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'MATIOTTELEGANTFONT-Regular';
+     src:url('fonts/MATIOTTELEGANTFONT-Regular.woff') format('woff'),
+         url('fonts/MATIOTTELEGANTFONT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'star';
+     src:url('fonts/star.woff') format('woff'),
+         url('fonts/star.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'Moonstar';
+     src:url('fonts/Moonstar.woff') format('woff'),
+         url('fonts/Moonstar.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'RotontoTrial-Regular';
+     src:url('fonts/RotontoTrial-Regular.woff') format('woff'),
+         url('fonts/RotontoTrial-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'Renaissance-Regular';
+     src:url('fonts/Renaissance-Regular.woff') format('woff'),
+         url('fonts/Renaissance-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+     font-family: 'MermaidSwashCaps-Bold';
+     src:url('fonts/MermaidSwashCaps-Bold.woff') format('woff'),
+         url('fonts/MermaidSwashCaps-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    height: 200vh;
+    background-image: linear-gradient(to bottom, #f5efe6, #aebdca, #7895b2, #7895b2, #aebdca, #f5efe6);
+}
+
+.top-words-container {
+            display: flex;
+            justify-content: space-between; 
+            padding: 10px; 
+            border: none;
+            color: #7895b2;
+            font-family: MermaidSwashCaps-Bold;
+            animation: colorChange 2s infinite alternate; 
+}
+
+@keyframes colorChange {
+    0% { color: #f5efe6; }
+    50% { color: #aebdca; }
+    100% { color: #7895b2; }
+  }
+
+
+
+hr {
+    color: #7895b2; 
+    border: none; 
+    background-color: #7895b2; 
+    height: 2px; 
+}
+
+.falling-box {
+    position: relative;
+    width: 250px; 
+    height: 250px; 
+    padding: 20px; 
+    border: none;
+    text-align: center; 
+    animation: fall 3s ease-in-out infinite;
+
+}
+
+.falling-box img {
+    max-width: 100%; 
+    max-height: 100%; 
+    margin: 0 auto; 
+}
+
+.falling-box:nth-child(1) {
+    animation-delay: 0s; 
+    display: flex; 
+    position: absolute;
+}
+
+
+.falling-box:nth-child(2) {
+    animation-delay: 1s;
+    position: relative;
+    left: 20%;
+    display: flex; 
+    position: absolute;
+}
+
+.falling-box:nth-child(3) {
+    animation-delay: 2s;
+    position: relative;
+    left: 40%;
+    display: flex; 
+    position: absolute;
+}
+
+.falling-box:nth-child(4) {
+    animation-delay: 3s;
+    position: relative;
+    left: 60%;
+    display: flex; 
+    position: absolute;
+}
+
+.falling-box:nth-child(5) {
+    animation-delay: 4s;
+    position: relative;
+    left: 80%;
+    display: flex; 
+    position: absolute;
+}
+
+@keyframes fall {
+    0% {
+        top: 100px;
+    }
+    100% {
+        top: calc(80vh - 150px); 
+    }
+}
+
+
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -150px;  
+}
+
+.image-container {
+    display: flex;
+    position: relative;
+}
+
+.image-container img {
+            max-width: 100%;
+            height: auto;
+}
+
+.overlay-text {
+            position: absolute;
+            top: 55%;
+            left: 40%;
+            transform: translate(-28%, -50%);
+            color: #f5efe6;
+            font-size: 55px;
+            border-radius: 50px;
+            font-family: MermaidSwashCaps-Bold;
+}
+
+
+
+.graph-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; 
+}
+
+.image {
+    position: relative;
+    right: 7000%;
+    top: 450%;
+    margin: 10px;
+}
+
+.flip-card {
+    width: 100%;
+    height: 100%;
+    perspective: 500px; 
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); 
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; 
+}
+
+.flip-card-back {
+    transform: rotateY(180deg); 
+}
+
+
+h5 {
+    margin: 0;
+    display: flex;
+    position: absolute;
+    top: 240%;
+    right: -5%;
+}
+
+h8 {
+    font-size: 17px;
+    color: #f5efe6;
+}
+
+.centered-box {
+    border-radius: 30px; 
+    padding: 100px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.content {
+    color: #f5efe6;
+    font-size: 17px;
+    font-family: MermaidSwashCaps-Bold;
+}
+
+
+
+.flip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; 
+}
+
+.flip-box {
+    position: relative;
+    left: 7000%;
+    top: 500%;
+    margin: 10px;
+}
+
+h6 {
+    margin: 0;
+    display: flex;
+    position: absolute;
+    top: 285%;
+    right: -10%;
+    color: #f5efe6;
+}
+
+
+
+h10{
+    display: flex;
+    position: absolute;
+    top: 340%;
+    right: 35%;
+    color: white;
+    font-size: 60px;
+    font-family: MermaidSwashCaps-Bold;
+    color: #f5efe6;
+    animation: colorChange 2s infinite alternate; 
+}
+
+@keyframes colorChange {
+    0% { color: #f5efe6; }
+    50% { color: #aebdca; }
+    100% { color: #7895b2; }
+}
+
+
+h11 {
+    display: flex;
+    position: absolute;
+    top: 355%;
+    right: 32%;
+}
