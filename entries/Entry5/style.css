@@ -239,33 +239,6 @@ h3 {
 }
 
 
-h5 {
-    margin: 0;
-    display: flex;
-    position: absolute;
-    top: 240%;
-    right: -5%;
-}
-
-h8 {
-    font-size: 17px;
-    color: #f5efe6;
-}
-
-.centered-box {
-    border-radius: 30px; 
-    padding: 100px;
-    text-align: center;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
-}
-
-.content {
-    color: #f5efe6;
-    font-size: 17px;
-    font-family: MermaidSwashCaps-Bold;
-}
-
-
 
 .flip-container {
     display: flex;
@@ -281,6 +254,34 @@ h8 {
     margin: 10px;
 }
 
+
+
+.centered-box {
+    border-radius: 30px; 
+    padding: 100px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.content {
+    color: #f5efe6;
+    font-size: 17px;
+    font-family: MermaidSwashCaps-Bold;
+}
+
+h5 {
+    margin: 0;
+    display: flex;
+    position: absolute;
+    top: 240%;
+    right: -5%;
+}
+
+h8 {
+    font-size: 17px;
+    color: #f5efe6;
+}
+
 h6 {
     margin: 0;
     display: flex;
@@ -289,8 +290,6 @@ h6 {
     right: -10%;
     color: #f5efe6;
 }
-
-
 
 h10{
     display: flex;
@@ -317,3 +316,36 @@ h11 {
     top: 355%;
     right: 32%;
 }
+
+
+
+h12 {
+    font-family: MermaidSwashCaps-Bold;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    left: -30%;
+    top: 100%;
+    padding: 20px;
+}
+
+.box {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #f5efe6, #7895b2)
+    border-radius: 8px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+
