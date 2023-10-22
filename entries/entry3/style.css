@@ -1,75 +1,132 @@
-@font-face {
-    font-family: 'burgess-regular';
-    src: url('fonts/burgess-regular.eot');
-    src: url('fonts/burgess-regular.eot?#iefix') format('embedded-opentype'),
-         url('fonts/burgess-regular.woff') format('woff'),
-         url('fonts/burgess-regular.woff2') format('woff2'),
-         url('fonts/burgess-regular.ttf') format('truetype');
+@font-face{
+     font-family: 'star';
+     src:url('fonts/star.woff') format('woff'),
+         url('fonts/star.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'RotontoTrial-Regular';
+     src:url('fonts/RotontoTrial-Regular.woff') format('woff'),
+         url('fonts/RotontoTrial-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 body{
-  background-color: pink;
+  background-image: url('images/background18.JPG');
+  background-size: 1500px;
 }
 
-body2{
-      text-align: center;
+h1 {
+  font-family: RotontoTrial-Regular;
+  font-size: 50px;
+  color: #ffb7cc;
 }
 
-dialog{
-  background-color: black;
-  color: lightpink;
+h2 {
+  font-family: RotontoTrial-Regular;
   font-size: 20px;
-  text-align: center;
+  color: #ffb7cc;
 }
 
-h1{
-  color: black;
-  text-align: center;
-  transform: rotateX(150deg);
-  font-family: 'burgess-regular';
+    .circle-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+    }
+
+    .circle-radio {
+      display: none;
+    }
+
+    .circle-label {
+      display: inline-block;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background-color: #ffb7cc;
+      margin: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .image {
+      display: none;
+    }
+
+    .circle-radio:checked + .circle-label + .image {
+      display: block;
+    }
+
+    .circle-radio:checked + .circle-label {
+      transform: scale(1.2);
+    }
+
+    .circle-container1 {
+      display: flex;
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    }
+  
+    .circle-container2 {
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 25%;
+    }
+
+    .circle-container3 {
+      display: flex;
+      position: absolute;
+      top: 70%;
+      left: 65%;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    }
+
+    .circle-container4 {
+      display: flex;
+      position: absolute;
+      top: 6%;
+      left: 60%;
+      border-radius: 50%; /* Creates a perfect circle */
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); 
+    }
+
+h3 {
+  font-family: RotontoTrial-Regular;
+  font-size: 20px;
 }
 
-h2{
-  color: black;
-  font-size: 30px;
-  font-family: 'burgess-regular';
-  letter-spacing: 2px;
+h4 {
+  font-family: RotontoTrial-Regular;
+  display: flex;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  font-size: 20px;
 }
 
-h3{
-    text-align: center;
+h5 {
+  font-family: RotontoTrial-Regular;
+  display: flex;
+  position: absolute;
+  left: 58%;
+  top: 5%;
+  font-size: 20px;
 }
 
-h4{
-    text-align: center;
+h6 {
+  font-family: RotontoTrial-Regular;
+  display: flex;
+  position: absolute;
+  left: 67%;
+  top: 67%;
+  font-size: 20px;
 }
 
-h5{
-  color: black; 
-  text-align: center;
-}
-
-h6{
-  color: black; 
-  text-align: center;
-}
-
-p3{
-    text-align: center;
-}
-
-p4{
-  color: white; 
-  font-size: 450px;
-  text-align: center;
-  letter-spacing: -5px;
-  text-shadow: 4px 4px 4px #000000;
-}
-
-form{;
-  color: black;
-  text-align: justify-all;
-}
-
+  

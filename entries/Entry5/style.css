@@ -66,6 +66,20 @@
     font-style: normal;
 }
 
+@font-face{
+     font-family: 'Bubbleboddy-FatTrial';
+     src:url('fonts/Bubbleboddy-FatTrial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+     font-family: 'Bubbleboddy-ExtraLightTrial';
+     src:url('fonts/Bubbleboddy-ExtraLightTrial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 body {
@@ -79,7 +93,7 @@ body {
             padding: 10px; 
             border: none;
             color: #7895b2;
-            font-family: MermaidSwashCaps-Bold;
+            font-family: Bubbleboddy-FatTrial;
             animation: colorChange 2s infinite alternate; 
 }
 
@@ -166,6 +180,7 @@ hr {
 
 
 h3 {
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,7 +205,7 @@ h3 {
             color: #f5efe6;
             font-size: 55px;
             border-radius: 50px;
-            font-family: MermaidSwashCaps-Bold;
+            font-family: Bubbleboddy-FatTrial;
 }
 
 
@@ -204,8 +219,8 @@ h3 {
 
 .image {
     position: relative;
-    right: 7000%;
-    top: 450%;
+    left: -7500%;
+    top: 350%;
     margin: 10px;
 }
 
@@ -249,8 +264,8 @@ h3 {
 
 .flip-box {
     position: relative;
-    left: 7000%;
-    top: 500%;
+    left: 5000%;
+    top: 550%;
     margin: 10px;
 }
 
@@ -266,7 +281,7 @@ h3 {
 .content {
     color: #f5efe6;
     font-size: 17px;
-    font-family: MermaidSwashCaps-Bold;
+    font-family: Bubbleboddy-ExtraLightTrial;
 }
 
 h5 {
@@ -298,7 +313,7 @@ h10{
     right: 35%;
     color: white;
     font-size: 60px;
-    font-family: MermaidSwashCaps-Bold;
+    font-family: Bubbleboddy-FatTrial;
     color: #f5efe6;
     animation: colorChange 2s infinite alternate; 
 }
@@ -320,7 +335,7 @@ h11 {
 
 
 h12 {
-    font-family: MermaidSwashCaps-Bold;
+    font-family: Bubbleboddy-FatTrial;
     margin: 0;
 }
 
