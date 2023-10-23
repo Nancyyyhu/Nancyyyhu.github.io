@@ -66,6 +66,8 @@
     font-style: normal;
 }
 
+
+
 body {
   background-color: pink;
   background-size: 1800px;
@@ -297,7 +299,7 @@ img {
 .image-container6 {
   position: absolute;
   top: 80%;
-  left: -150%;
+  left: -15 0%;
   width: 100%;
   height: 100%;
   object-fit: cover;
