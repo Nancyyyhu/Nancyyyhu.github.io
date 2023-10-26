@@ -16,7 +16,9 @@
 
 body{
   background-image: url('images/background18.JPG');
-  background-size: 1500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
 }
 
 h1 {
