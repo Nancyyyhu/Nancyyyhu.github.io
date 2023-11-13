@@ -122,6 +122,12 @@ h2{
             text-decoration: underline;
         }
 
+.image-container-6 {
+            position: absolute;
+            left: 0%;
+            top: 0%;
+        }
+
 p1 {
   animation: colorChange1 5s infinite alternate; 
 }
