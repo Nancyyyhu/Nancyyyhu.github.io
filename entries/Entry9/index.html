@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">  
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  
+</head>
+
+<body>
+  <div class="bg">
+  <span>VINTAGE STYLE</span>
+  </div>
+  <h1>I like French style because France is known as the capital of romance. Novel opera costume show, culture and art atmosphere deeply rooted in this soil, creating the romantic and elegant nature of the French people, but also let the French style wear more unique charm</h1>
+  <h2>Upper Cloth: 
+    <span class="list-one"></span><br> Lower Cloth: 
+    <span class="list-two"></span><br> Shoes: <span class="list-three"></span></h2>
+  <button class="circle-button">Generate!</button>
+
+<script type="text/javascript" src="script.js">
+  const bg=document.querySelector(".bg");
+  document.addEventListener("scroll",
+  function(){
+  const scrollY=window.scrollY;
+    if(scrollY!=0){
+      bg.style.backgroundPosition="calc(50% + "+scrollY+"px) calc(50% + "+scrollY+"px)";
+    }else{
+      bg.style.backgroundPosition=""
+    }
+  })
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      // list one content
+      var one = [
+        "Blouse",
+        "Crop top",
+        "Halterneck",
+        "Shirt",
+        "Dress shirt",
+        "Henley shirt",
+        "Sweater",
+        "Cardigan",
+        "Guernsey",
+        "Vest",
+        "Waistcoat",
+        "Suit",
+        "Jacket", 
+      ];
+
+      // list two content
+      var two = [
+        "jeans",
+        "shorts",
+        "Athletic shorts",
+        "Dress pants",
+        "leggings",
+        "Long dress",
+        "kilt",
+        "Pleated skirt",
+        "Chaparajos",
+        "Woolen underwear",
+        "sweatpants",
+        "Bell-bottoms",
+        "Slacks",
+      ];
+            
+            // list three content
+      var three = [
+        "Leather shoes",
+        "Sneakers ",
+        "Outdoor shoes",
+        "High heels",
+        "Straw shoes",
+        "Cloth shoes",
+        "Slippers",
+        "Mountaineering shoes",
+        "Rubber shoes",
+        "Cotton slippers",
+        "Canvas shoes",
+        "Tennis shoes",
+       
+      ];
+            
+
+      // This is a very common randomizing function.
+      // It takes a list (array) and returns one at random.
+      function select_random(x){
+        y = x[Math.floor(Math.random()*x.length)];
+        return y;
+      }
+
+      function generate(){
+
+        // Select a random item from each list
+        var selected_one = select_random(one);
+        var selected_two = select_random(two);
+                var selected_three = select_random(three);
+
+        // Take the selected (random) item from list and make it visible
+        $('.list-one').html(selected_one);
+        $('.list-two').html(selected_two);
+                $('.list-three').html(selected_three);
+
+      }
+
+      $('button').click(function(){
+        generate();
+      });
+
+      generate();
+      
+    });
+
+  </script>
+
+</body>
+</html>

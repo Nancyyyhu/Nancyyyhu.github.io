@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'FLOWRISE';
+    src: url('fonts/FLOWRISE.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BROGETTA-Regular';
+    src: url('fonts/BROGETTA-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bg{
+  background-image: url("images/background2.JPG");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 400vh;
+  font-size: 400px;
+  font-weight: 2000;
+  text-align: center;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  padding-top: 300px;
+  font-family: FLOWRISE;
+}
+
+.bg::before{
+  content: "";
+  background-image: inherit;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -99;
+  font-family: FLOWRISE;
+}
+
+h1{
+  position: absolute;
+  top: 160vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  font-size: 30px;
+  letter-spcing: 10px;
+  padding: 100px 100px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  font-family: FLOWRISE;
+  animation: colorChange1 2s infinite alternate;
+}
+
+@keyframes colorChange1 {
+    0% { color: #E5DDD2; }
+    50% { color: rosybrown; }
+    100% { color: #3D462C; }
+  }
+
+h2{
+  position: absolute;
+  top: 350vh;
+  left: 100px;
+  width: 100%;
+  letter-space: 5px;
+  font-size: 50px;
+  font-family: FLOWRISE;
+  color: #40342D;
+  margin-inline: 10px;
+}
+
+  .circle-button {
+            position: fixed;
+            bottom: 100px;
+            right: 150px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rosybrown;
+            color: #E5DDD2;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            border: none; 
+            font-family: BROGETTA-Regular;
+            font-size: 20px;
+            letter-spacing: 2px;
+          }
+
+  .circle-button:hover{
+    color: rosybrown;
+    background-color: #E5DDD2;
+  }
+
+    .list-one {
+      color: rosybrown;
+    }
+
+    .list-two {
+      color: #013350;
+    }
+        
+        .list-three {
+      color: #E5DDD2;
+    }
