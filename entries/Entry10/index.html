@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">  
+</head>
+
+<body>
+  <div class="container container-1">
+        Dressing to Celebrate Thanksgiving! ↓
+    </div>
+
+    <div class="container container-2">
+        <div>
+            <img src="images/background1.JPG" alt="" id="img-0" class="active">
+            <img src="images/background2.JPG" alt="" id="img-1">
+        </div>
+
+        <div class="box box-1"><img src="images/ootd1.png" width="5" height="10"></div>
+        <div class="box box-2"><img src="images/ootd2.png" width="5" height="10"></div>
+
+         <div class="card">
+            <img src="images/1.JPG" alt="">
+            <div class="text">
+                <h2>Collection 1 Warmth <span>Strike!</span> </h2>
+                <p>Oversized Scarf, Knitted Sweater, Long Hip Skirt</p>
+            </div>
+        </div>
+         <div class="card">
+            <img src="images/2.JPG" alt="">
+            <div class="text">
+                <h2>Collection 2 Quick<span>-witted!</span></h2>
+                <p>White Shirt, Knitted Waistcoat, Long Plaid Dress</p>
+            </div>
+        </div>
+
+        <div class="btn-next">NEXT</div>
+    </div>
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+const button=document.querySelector('.btn-next');
+const totalElements=2;
+let index=0;
+
+button.onclick=function(){
+    var currentImage=document.getElementById(`img-${index}`);
+    index++;
+    if(index>=totalElements){
+        index=0;
+    }
+
+    var nextImage=document.getElementById(`img-${index}`);
+    currentImage.classList.add('transition-start');
+    currentImage.classList.add('right');
+    nextImage.classList.add('transition-end');
+    nextImage.classList.add('right');
+
+    currentImage.onanimationend=function(){
+        currentImage.classList.remove('active');
+        currentImage.classList.remove('transition-start');
+        currentImage.classList.remove('right');
+    }
+
+    nextImage.onanimationend=function(){
+        nextImage.classList.add('active');
+        nextImage.classList.remove('transition-end');
+        nextImage.classList.remove('right');
+    }
+}
+</script>
+
+
