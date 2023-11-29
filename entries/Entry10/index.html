@@ -38,6 +38,10 @@
 
         <div class="btn-next">NEXT</div>
     </div>
+
+<button id="prevButton">Previous</button>
+<button id="nextButton">Next</button>
+
 </body>
 </html>
 
@@ -73,6 +77,19 @@ button.onclick=function(){
         nextImage.classList.remove('right');
     }
 }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+document.getElementById('prevButton').addEventListener('click', function() {
+    // Change 'previous-page.html' to the URL of the previous webpage
+    window.location.href = 'https://nancyyyhu.github.io/entries/Entry8/index';
+});
+
+document.getElementById('nextButton').addEventListener('click', function() {
+    // Change 'next-page.html' to the URL of the next webpage
+    window.location.href = 'https://nancyyyhu.github.io/entries/Entry10/index';
+});
 </script>
 
 

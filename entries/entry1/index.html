@@ -351,6 +351,21 @@ button {
 <h6>Weather : Sunny☀</h6>
 <button>♦<a href="https://youtube.com/shorts/QwJRhzgCwRE" target="_blank">See my ootd!</a></button>
 
+<button id="prevButton">Previous</button>
+<button id="nextButton">Next</button>
 
 </body>
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+document.getElementById('prevButton').addEventListener('click', function() {
+    // Change 'previous-page.html' to the URL of the previous webpage
+    window.location.href = 'https://nancyyyhu.github.io/';
+});
+
+document.getElementById('nextButton').addEventListener('click', function() {
+    // Change 'next-page.html' to the URL of the next webpage
+    window.location.href = 'https://nancyyyhu.github.io/entries/entry2/index';
+});
+</script>
