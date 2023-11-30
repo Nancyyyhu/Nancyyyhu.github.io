@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+   <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<style>
+body {
+    background-image: url(images/background1.JPG);
+    background-size: 400px;
+  }
+
+  .image-container-1 {
+  position: absolute;
+  top: 40%;
+  left: 59%;
+  animation: easeInOutAnimation 3s ease-in-out infinite forwards;
+}
+
+.image-container-2 {
+  position: absolute;
+  top: 10%;
+  left: -5%;
+  animation: increaseAnimation 2s linear forwards;
+}
+
+.image-container-3 {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  animation: increaseAnimation 2s linear forwards;
+}
+
+.image-container-4 {
+  position: fixed;
+  top: 0;
+  left: 75%;
+  animation: increaseAnimation 1s linear forwards;
+}
+
+@keyframes easeInOutAnimation {
+   0% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(2); 
+        visibility: hidden;
+    }
+}
+
+@keyframes moveCenterAnimation {
+    0% {
+        transform: translateX(360%); 
+    }
+    100% {
+        transform: translateX(180%); 
+    }
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes increaseAnimation {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+</style>
+
+<div class="image-container image-container-1">
+  <img src="images/ootd1.PNG" width="100" height="150">
+</div>
+
+<div class="image-container image-container-2">
+  <img src="images/ootd2.PNG" width="200" height="200">
+</div>
+
+<div class="image-container image-container-3">
+  <img src="images/ootd3.PNG" width="200" height="200">
+</div>
+ 
+<div class="image-container image-container-4">
+  <img src="images/ootd4.PNG" width="200" height="200">
+</div> 
