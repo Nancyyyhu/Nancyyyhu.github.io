@@ -8,10 +8,49 @@
 </head>
 
 <body>
+
+<style>
+  @font-face {
+    font-family: 'HomeChristmas-Regular';
+    src: url('fonts/HomeChristmas-Regular.woff') format('woff'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+  .navButton {
+    width: 62px;
+    height: 30px;
+    border-radius: 20%;
+    font-family: HomeChristmas-Regular;
+    background-color: #E5DDD2;
+    color: #751918;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+}
+
+.navButton:hover {
+  color: #E5DDD2;
+  background-color: #20422A;
+}
+
+#prevButton {
+    top: 5px;
+    right: 15px;
+}
+
+#nextButton {
+    top: 45px;
+    right: 15px;
+}
+</style>
+
   <div class="container container-1">
         Dressing to Celebrate Thanksgiving! ↓
-        <button id="prevButton">Previous</button>
-<button id="nextButton">Next</button>
+        <button class="navButton" id="prevButton">Back</button>
+        <button class="navButton" id="nextButton">Finish</button>
     </div>
 
     <div class="container container-2">

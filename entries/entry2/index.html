@@ -8,9 +8,36 @@
 </head>
   
 <body>
+  <style>
+  .navButton {
+    width: 120px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e8a6b3;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    font-family: LoveLight-Regular;
+    color: #4c4c4c;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+}
+
+#prevButton {
+    left: 10px;
+}
+
+#nextButton {
+    right: 10px;
+}
+</style>
+
 <h1>What I wear on Christmas Day?</h1>
 <h2>December 25</h2>
-
+<h3><button class="navButton" id="prevButton">Keep Moving</button>
+<button class="navButton" id="nextButton">Jump Back</button></h3>
  
  <div class="slider slider1">
     <div class="image-container image-container1">
@@ -92,9 +119,6 @@
 <div class="image-container image-container8">
   <img src="images/tree3.PNG">
 </div>
-
-<button id="prevButton">Previous</button>
-<button id="nextButton">Next</button>
 
 </body>
 </html>

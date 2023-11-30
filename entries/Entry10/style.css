@@ -16,9 +16,11 @@ html,body{
 
 .container-1{
     color: #AF926A;
-    font-size: 75px;
+    font-size: 60px;
     font-family: HomeChristmas-Regular;
     text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
     font-weight: bolder;
     position: relative;
     background-color: #20422A;

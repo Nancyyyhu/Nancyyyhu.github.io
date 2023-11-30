@@ -10,11 +10,48 @@
 </head>
 
 <body>
-<button id="prevButton">Previous</button>
-<button id="nextButton">Next</button>
+ <style>
+  @font-face {
+    font-family: 'FLOWRISE';
+    src: url('fonts/FLOWRISE.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  .navButton {
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    font-family: FLOWRISE;
+    background-color: #E5DDD2;
+    color: rosybrown;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+}
+
+.navButton:hover {
+  color: #E5DDD2;
+  background-color: rosybrown;
+}
+
+#prevButton {
+    left: 10px;
+}
+
+#nextButton {
+    right: 10px;
+}
+</style>
+
   <div class="bg">
   <span>VINTAGE STYLE</span>
   </div>
+  <button class="navButton" id="prevButton">Previous</button>
+<button class="navButton" id="nextButton">Next</button>
   <h1>I like French style because France is known as the capital of romance. Novel opera costume show, culture and art atmosphere deeply rooted in this soil, creating the romantic and elegant nature of the French people, but also let the French style wear more unique charm</h1>
   <h2>Upper Cloth: 
     <span class="list-one"></span><br> Lower Cloth: 

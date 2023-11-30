@@ -103,7 +103,6 @@ h2 {
     }
 
     .circle p {
-      color: #fff;
       font-size: 40px;
       font-weight: bold;
       display: flex;
@@ -126,7 +125,6 @@ h2 {
     }
 
     .circle2 p {
-      color: #fff;
       font-size: 28px;
       font-weight: bold;
       display: flex;
@@ -149,7 +147,6 @@ h2 {
     }
 
     .circle3 p {
-      color: #fff;
       font-size: 45px;
       font-weight: bold;
       display: flex;
@@ -172,7 +169,6 @@ h2 {
     }
 
     .circle4 p {
-      color: #fff;
       font-size: 32px;
       font-weight: bold;
       display: flex;

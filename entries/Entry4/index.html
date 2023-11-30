@@ -34,10 +34,33 @@
             background: lightpink;
             display: inline-block;
         }
+
+        .navButton {
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(#ef629f, #eecda3);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    font-family: RotontoTrial-Regular;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+}
+
+#prevButton {
+    left: 10px;
+}
+
+#nextButton {
+    right: 20px;
+}
     </style>
     
-<button id="prevButton">Previous</button>
-<button id="nextButton">Next</button>
+<button class="navButton" id="prevButton">&lt</button>
+<button class="navButton" id="nextButton">&gt</button>
 <h2>Dress for School</h2>
 <h3><dialog open><b>Dress for School</b></dialog></h3>
 <br>
